@@ -1,0 +1,60 @@
+MYSQL / SGBD / SQL
+O MySQL é um sistema gerenciador de banco de dados(SGBD) 
+relacional de código aberto usado na maioria das aplicações 
+gratuitas para gerir suas bases de dados.
+
+O MySQL utiliza a linguagem SQL (Structure Query Language – 
+Linguagem de Consulta Estruturada), que é a linguagem mais 
+popular para inserir, acessar e gerenciar o conteúdo armazenado 
+num banco de dados.
+
+
+DATABASE
+
+TABLE
+
+PRIMARY KEY (chave primaria)
+
+FOREIGN KEY (chave_secundaria)
+
+Tipo de Dados (varchar, int, float, booelan, date)
+
+DER
+
+Relacionamento
+
+Um pra Um (1:1)
+
+Um pra Muitos (1:N)
+
+Muitos pra Muitos (N:N)
+
+
+
+SHOW DATABASES;
+
+USE <nome_bancodedados>;
+
+SHOW TABLES;
+
+CREATE TABLE <nome_tabela> (
+	<nome_chave_primaria> <tipo_de_dados> NOT NULL PRIMARY KEY,
+	<nome_campo_2> <tipo_de_dados> NOT NULL,
+	<nome_campo_3> <tipo_de_dados> NOT NULL,
+	<nome_campo_4> <tipo_de_dados> NOT NULL,
+	<nome_campo_5> <tipo_de_dados> NOT NULL,
+	<nome_campo_6> <tipo_de_dados> NOT NULL,
+	<nome_chave_secundaria> <tipo_de_dados> NOT NULL FOREIGN KEY
+);
+
+SELECT * FROM <nome_tabela>;
+
+Porque "*" no SELECT
+
+SELECT <nome_campo_2>,<nome_campo_3>,<nome_campo_4> 
+FROM <nome_tabela>;
+
+Porque "WHERE" no SELECT
+
+SELECT <nome_campo_2>,<nome_campo_3>,<nome_campo_4> 
+FROM <nome_tabela> WHERE <condição>;
