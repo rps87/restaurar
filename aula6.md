@@ -23,3 +23,4 @@ TABELA: entregas
         - endereco
         - nomeCliente
         - telCliente
+        
